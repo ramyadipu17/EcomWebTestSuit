@@ -1,0 +1,406 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-22T08:01:28.340Z",
+        "line": 3,
+        "name": "Add an item to the cart",
+        "description": "",
+        "id": "add-to-cart-functionality;add-an-item-to-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8589729700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in and on the inventory page",
+            "match": {
+              "location": "stepdefinition.products.iAmLoggedInAndOnTheInventoryPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2063046500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I add the \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinition.cart.iAddTheToTheCart(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2205387300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the item should be added to the cart successfully",
+            "match": {
+              "location": "stepdefinition.cart.theItemShouldBeAddedToTheCartSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-22T08:01:41.313Z",
+        "line": 8,
+        "name": "Add multiple items to the cart",
+        "description": "",
+        "id": "add-to-cart-functionality;add-multiple-items-to-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6839249100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am logged in and on the inventory page",
+            "match": {
+              "location": "stepdefinition.products.iAmLoggedInAndOnTheInventoryPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128107800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I add multiple items to the cart:",
+            "match": {
+              "location": "stepdefinition.cart.iAddTheFollowingItemsToTheCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2330719600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "all the items should be added to the cart",
+            "match": {
+              "location": "stepdefinition.cart.allTheItemsShouldBeAddedToTheCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add to Cart Functionality",
+    "description": "",
+    "id": "add-to-cart-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/cart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-22T08:01:50.617Z",
+        "line": 3,
+        "name": "User logs in with valid credentials",
+        "description": "",
+        "id": "login-functionality;user-logs-in-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3990485300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepdefinition.login.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1189222000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter valid username and password",
+            "match": {
+              "location": "stepdefinition.login.iEnterValidUsernameAndPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2110355800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "stepdefinition.login.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14203700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be redirected to the homepage",
+            "match": {
+              "location": "stepdefinition.login.iShouldBeRedirectedToTheHomepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 110391600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see a welcome message",
+            "match": {
+              "location": "stepdefinition.login.iShouldSeeAWelcomeMessage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-22T08:01:58.046Z",
+        "line": 10,
+        "name": "Unsuccessful login with invalid credentials",
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3644623200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepdefinition.login.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1144339200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter invalid username and password",
+            "match": {
+              "location": "stepdefinition.login.iEnterInvalidUsernameAndPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2071093400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click the login button",
+            "match": {
+              "location": "stepdefinition.login.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118617300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see an error message",
+            "match": {
+              "location": "stepdefinition.login.iShouldSeeAnErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-22T08:02:05.032Z",
+        "line": 16,
+        "name": "Login with empty username and password",
+        "description": "",
+        "id": "login-functionality;login-with-empty-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4161904700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am on the login page",
+            "match": {
+              "location": "stepdefinition.login.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 981100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I leave the username and password fields empty",
+            "match": {
+              "location": "stepdefinition.login.iLeaveTheUsernameAndPasswordFieldsEmpty()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2050605000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click the login button",
+            "match": {
+              "location": "stepdefinition.login.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124976500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see a user id required error message",
+            "match": {
+              "location": "stepdefinition.login.iShouldSeeAUserIdRequiredErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-22T08:02:11.378Z",
+        "line": 3,
+        "name": "Verify presence of products on the products page",
+        "description": "",
+        "id": "products-page-validations;verify-presence-of-products-on-the-products-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7336741100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in and on the inventory page",
+            "match": {
+              "location": "stepdefinition.products.iAmLoggedInAndOnTheInventoryPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 251071300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should see a list of available products",
+            "match": {
+              "location": "stepdefinition.products.iShouldSeeAListOfAvailableProducts()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-05-22T08:02:18.972Z",
+        "line": 7,
+        "name": "Verify sorting functionality on the products page",
+        "description": "",
+        "id": "products-page-validations;verify-sorting-functionality-on-the-products-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6912457000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in and on the inventory page",
+            "match": {
+              "location": "stepdefinition.products.iAmLoggedInAndOnTheInventoryPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2306682900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I sort the products by price",
+            "match": {
+              "location": "stepdefinition.products.iSortTheProductsByPrice()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83603300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the products sorted by name",
+            "match": {
+              "location": "stepdefinition.products.iShouldSeeTheProductsSortedByName()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products Page Validations",
+    "description": "",
+    "id": "products-page-validations",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/products.feature",
+    "tags": []
+  }
+]
